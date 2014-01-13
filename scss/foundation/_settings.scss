@@ -3,7 +3,7 @@
 //
 
 // This is the default html and body font-size for the base rem value.
-$rem-base: 16px;
+// $rem-base: 16px;
 
 // Allows the use of rem-calc() or lower-bound() in your settings
 @import "foundation/functions";
@@ -88,10 +88,10 @@ $large-up: "#{$screen} and (min-width:#{lower-bound($large-range)})";
 // $large-only: "#{$screen} and (min-width:#{lower-bound($large-range)}) and (max-width:#{upper-bound($large-range)})";
 
 $xlarge-up: "#{$screen} and (min-width:#{lower-bound($xlarge-range)})";
-// $xlarge-only: "#{$screen} and (min-width:#{lower-bound($xlarge-range)}) and (max-width:#{upper-bound($xlarge-range)})";
+$xlarge-only: "#{$screen} and (min-width:#{lower-bound($xlarge-range)}) and (max-width:#{upper-bound($xlarge-range)})";
 
 $xxlarge-up: "#{$screen} and (min-width:#{lower-bound($xxlarge-range)})";
-// $xxlarge-only: "#{$screen} and (min-width:#{lower-bound($xxlarge-range)}) and (max-width:#{upper-bound($xxlarge-range)})";
+$xxlarge-only: "#{$screen} and (min-width:#{lower-bound($xxlarge-range)}) and (max-width:#{upper-bound($xxlarge-range)})";
 
 // Legacy
 // $small: $medium-up;
