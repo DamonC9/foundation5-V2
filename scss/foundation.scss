@@ -1,0 +1,139 @@
+// Make sure the charset is set appropriately
+@charset "UTF-8";
+
+//Import Bourbon
+@import 'bourbon';
+
+//Normalize
+@import "normalize";
+
+//Mixins
+@import "foundation/mixins";
+
+// Behold, here are all the Foundation components.
+@import
+  "foundation/components/accordion",
+  "foundation/components/alert-boxes",
+  "foundation/components/block-grid",
+  "foundation/components/breadcrumbs",
+  "foundation/components/button-groups",
+  "foundation/components/buttons",
+  "foundation/components/clearing",
+  "foundation/components/dropdown",
+  "foundation/components/dropdown-buttons",
+  "foundation/components/flex-video",
+  "foundation/components/forms",
+  "foundation/components/grid",
+  "foundation/components/inline-lists",
+  "foundation/components/joyride",
+  "foundation/components/keystrokes",
+  "foundation/components/labels",
+  "foundation/components/magellan",
+  "foundation/components/orbit",
+  "foundation/components/pagination",
+  "foundation/components/panels",
+  "foundation/components/pricing-tables",
+  "foundation/components/progress-bars",
+  "foundation/components/reveal",
+  "foundation/components/side-nav",
+  "foundation/components/split-buttons",
+  "foundation/components/sub-nav",
+  "foundation/components/switch",
+  "foundation/components/tables",
+  "foundation/components/tabs",
+  "foundation/components/thumbs",
+  "foundation/components/tooltips",
+  "foundation/components/top-bar",
+  "foundation/components/type",
+  "foundation/components/offcanvas",
+  "foundation/components/visibility";
+
+  /* BASE (MOBILE) SIZE
+  This are the mobile styles. It's what people see on their phones. If
+  you set a great foundation, you won't need to add too many styles in
+  the other stylesheets. Remember, keep it light: Speed is Important.
+  */
+
+    @media #{$small-up} {
+
+      @import "foundation/queries/base";
+
+    }
+
+
+  /* TABLET & SMALLER LAPTOPS
+  This are the mobile device styles. It's what people see on their tablet devices. This query 
+  is not orientation-specific.
+  
+  40.063em (641px) and above */
+
+    @media #{$medium-up} {
+
+      @import "foundation/queries/medium";
+     
+    }
+
+
+    /* DESKTOP SIZE
+    This are the desktop and larger laptop styles. It begins right where the landscape view of an iPad 
+    stops and covers some widescreen monitors.
+      
+    64.063em (1025px) and above */
+
+    @media #{$large-up} {
+
+      @import "foundation/queries/large";
+      
+    }
+
+
+    /* LARGE VIEWING SIZE
+    This is for the larger monitors and possibly full screen viewers.
+      
+    90.063em (1441px) and above */
+
+    @media #{$xlarge-up} {
+
+      @import "foundation/queries/xlarge";
+
+    }
+
+
+    /* ULTRA LARGE VIEWING SIZE
+      This is for the VERY LARGE monitors like an iMac.
+      
+      120.063em (1921px) and above */
+
+    @media #{$xxlarge-up} {
+      
+      @import "foundation/queries/xxlarge";
+
+    }
+
+
+    /* RETINA (2x RESOLUTION DEVICES)
+    This applies to the retina iPhone (4s) and iPad (2,3) along with
+    other displays with a 2x resolution. You can also create a media
+    query for retina AND a certain size if you want. Go Nuts.
+    */
+
+    @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+           only screen and (min--moz-device-pixel-ratio: 1.5),
+           only screen and (min-device-pixel-ratio: 1.5) {
+
+      @import "foundation/queries/2x";
+
+    } 
+
+    /* PRINT STYLESHEET
+    Feel free to customize this. Remember to add things that won't make
+    sense to print at the bottom. Things like nav, ads, and forms should
+    be set to display none.
+    */
+
+    @media print {
+
+      @import "foundation/queries/print";
+
+    }
+
